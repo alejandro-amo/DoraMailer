@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}This is Dora's example task title{% endblock %}
+{% block message %}
+<p>This is the template used by the "example_task".</p>
+<p>Templates will be more flexible if you provide a "context" dict variable with a "message" string, but it's optional.</p>
+<p>See example task file for more info.</p>
+{% if message %}
+  <br/>
+  <p>Message provided in context of the called task: {{message}}</p>
+{% endif %}
+{% endblock %}
+
